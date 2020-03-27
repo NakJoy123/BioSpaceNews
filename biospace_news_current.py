@@ -22,7 +22,9 @@ pprint.pprint(list_articles(link))
 
 with open('Current_BioSpace_Articles.txt', mode='w') as file:
 	text_file=(list_articles(link)) 
-	file.write(f"{text_file}")
+	for element in text_file:
+		file.write(f"{element}\n")
+		
 
 
 
